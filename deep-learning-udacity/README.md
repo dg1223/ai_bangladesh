@@ -48,5 +48,5 @@ We minimize this error function using the gradient descent algorithm.<br/>
 
 ## L6: Convolutional Neural Networks
 * The values in an edge detection kernel (a CNN filter) should sum to 0.
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; * If the values do not sum up to 0, they will create the effect of brighetining or darkening the image.
+* If the values do not sum up to 0, they will create the effect of brighetining or darkening the image.
 * **Rule of thumb 1**: The more information you have in an image (e.g. the higher the resolution and/or frequency), the more hidden layers you might need for classification. If an image contains very little information (e.g. 28x28 MNIST images with little to no spatial information), you should use few hidden layers, probably 1 to 2 hidden layers max. Otherwise, your network might start losing important information.
