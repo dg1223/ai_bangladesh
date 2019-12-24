@@ -52,4 +52,11 @@ We minimize this error function using the gradient descent algorithm.<br/>
 * **Rule of thumb 1**: The more information you have in an image (e.g. the higher the resolution and/or frequency), the more hidden layers you might need for classification. If an image contains very little information (e.g. 28x28 MNIST images with little to no spatial information), you should use few hidden layers, probably 1 to 2 hidden layers max. Otherwise, your network might start losing important information.
 * The length of stride determines by what factor we are reducing the input dimension.<br/>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;E.g. a 2x2 kernel with a stride of 4 will reduce the dimension by a factor of 4 (factor of 4 means the dimension reduces 4 times aka divide the dimension by 4)
+* Shape of a convolution layer: (W_in−F+2P)/S+1<br/>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;K - the number of filters in the convolutional layer<br/>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;F - the height and width of the convolutional filters<br/>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;S - the stride of the convolution<br/>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P - the padding<br/>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;W_in - the width/height (square) of the previous layer
 * MaxPool(Relu(x)) = Relu(MaxPool(x))
+* Remember: KFFD + K (# of parameters)
