@@ -52,3 +52,4 @@ We minimize this error function using the gradient descent algorithm.<br/>
 * **Rule of thumb 1**: The more information you have in an image (e.g. the higher the resolution and/or frequency), the more hidden layers you might need for classification. If an image contains very little information (e.g. 28x28 MNIST images with little to no spatial information), you should use few hidden layers, probably 1 to 2 hidden layers max. Otherwise, your network might start losing important information.
 * The length of stride determines by what factor we are reducing the input dimension.<br/>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;E.g. a 2x2 kernel with a stride of 4 will reduce the dimension by a factor of 4 (factor of 4 means the dimension reduces 4 times aka divide the dimension by 4)
+* MaxPool(Relu(x)) = Relu(MaxPool(x))
